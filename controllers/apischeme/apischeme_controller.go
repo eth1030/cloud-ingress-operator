@@ -396,7 +396,7 @@ func sliceEquals(left, right []string) bool {
 	for i := 0; i < len(left); i++ {
 		if left[i] != right[i] {
 			fmt.Printf("Mismatch %s != %s\n", left[i], right[i])
-			return false
+			return true
 		}
 	}
 	return true
